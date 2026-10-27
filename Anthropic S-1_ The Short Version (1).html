@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anthropic S-1: The Short Version</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1d2430;--muted:#657084;--line:#dcd8cf;--acc:#1f4e79;--pos:#1f7a4a;--neg:#b3392f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10151d;--card:#18202b;--ink:#e9edf3;--muted:#9aa6b8;--line:#2a3544;--acc:#8ab6e6;--pos:#55c48a;--neg:#ee7b70;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10151d;--card:#18202b;--ink:#e9edf3;--muted:#9aa6b8;--line:#2a3544;--acc:#8ab6e6;--pos:#55c48a;--neg:#ee7b70;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:640px;margin:0 auto;padding:20px 16px 56px}
+h1{font-size:1.55rem;line-height:1.2;margin:0 0 6px}
+.lede{color:var(--muted);margin:0 0 18px;font-size:.95rem}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:12px}
+.hero b{font-size:1.05rem}
+.big{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.big div{border-left:3px solid var(--acc);padding-left:10px}
+.big span{display:block;font-size:1.35rem;font-weight:700}
+.big small{color:var(--muted)}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px}
+summary{padding:14px;font-weight:650;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:8px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--muted)}
+details[open] summary::after{content:"−"}
+.in{padding:0 14px 14px}
+.in p{margin:8px 0}
+dl{margin:0}
+dt{font-weight:650;margin-top:10px}
+dd{margin:2px 0 0;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{padding:6px 4px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+.wrap{overflow-x:auto}
+.neg{color:var(--neg)}.pos{color:var(--pos)}
+ul{margin:6px 0;padding-left:18px}li{margin:5px 0}
+.blank{border:1.5px dashed var(--line);border-radius:10px;padding:12px;font-size:.9rem;color:var(--muted)}
+.src{font-size:.8rem;color:var(--muted);margin-top:18px}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+<h1>Anthropic S-1: the short version</h1>
+<p class="lede">Filed October 26, 2026. Ticker “ANT” on Nasdaq. Boiled down from a 400-page filing.</p>
+
+<div class="hero">
+<b>The deal</b>
+<p style="margin:6px 0 0">A traditional IPO of Class A shares. Anthropic sells some, and existing holders sell some. <b>Price, share count and raise size are all still blank</b>, as normal for a first filing. Money goes to compute, hiring and general use. It also covers tax on employee RSU settlements.</p>
+<div class="big">
+<div><span>$16.3B</span><small>revenue, first half 2026</small></div>
+<div><span>$131.7B</span><small>cash and investments, Jun 30</small></div>
+<div><span>~900%</span><small>net revenue retention</small></div>
+<div><span>+$1.6B</span><small>adjusted operating income, H1</small></div>
+</div>
+</div>
+
+<details open><summary>Who’s who: the deal makers</summary><div class="in"><dl>
+<dt>Lead banks</dt><dd>Goldman Sachs and Morgan Stanley top the list. Then J.P. Morgan, Citigroup, Barclays and Wells Fargo. 22 banks in all, including BofA, Deutsche, RBC, UBS, Jefferies, Mizuho, MUFG and Cantor.</dd>
+<dt>Lawyers</dt><dd>Wilson Sonsini Goodrich &amp; Rosati for the company, with Anthropic’s in-house team (Brian Israel and others). Freshfields US is also named.</dd>
+<dt>Founders</dt><dd>Seven co-founders: Dario Amodei (CEO), Daniela Amodei (President, board chair), Tom Brown, Jack Clark, Jared Kaplan, Sam McCandlish and Chris Olah. Together they hold one special Class F share through “Founder LLC”.</dd>
+<dt>Long-Term Benefit Trust</dt><dd>Five financially disinterested trustees. They elect and can remove a majority of the board.</dd>
+<dt>Amazon (AWS)</dt><dd>An April 2026 agreement lets Amazon buy up to $20B of convertible notes or shares, plus an option on up to $5B more in later rounds. The notes convert to non-voting Class N stock at IPO, up to an ownership cap.</dd>
+<dt>Cloud partners</dt><dd>Claude is sold through AWS, Google Cloud and Microsoft Azure. Anthropic keeps the customer contract and pays each a fee. Chips come from Trainium, Google TPUs, NVIDIA and AMD.</dd>
+<dt>Resellers and integrators</dt><dd>Accenture, Deloitte, KPMG, PwC, Salesforce and Snowflake. There is also a new services company, Ode with Anthropic, built with private equity firms.</dd>
+</dl></div></details>
+
+<details><summary>The numbers</summary><div class="in">
+<div class="wrap"><table>
+<tr><th>$ millions</th><th>2024</th><th>2025</th><th>H1 ’26</th></tr>
+<tr><td>Revenue</td><td>386</td><td>4,585</td><td>16,286</td></tr>
+<tr><td>Compute costs</td><td>2,522</td><td>7,326</td><td>8,945</td></tr>
+<tr><td>Operating loss</td><td class="neg">(2,980)</td><td class="neg">(8,060)</td><td class="neg">(693)</td></tr>
+<tr><td>Adj. operating income</td><td class="neg">(2,788)</td><td class="neg">(4,854)</td><td class="pos">1,618</td></tr>
+<tr><td>Net loss</td><td class="neg">(8,309)</td><td class="neg">(41,965)</td><td class="neg">(80,748)</td></tr>
+</table></div>
+<ul>
+<li><b>Operations are close to break-even.</b> The H1 operating loss was only 4% of revenue.</li>
+<li><b>The huge net loss is mostly accounting.</b> $72.4B of H1’s loss is a rise in the fair value of convertible notes and SAFEs as the valuation climbed. It is not cash spent.</li>
+<li>2025 included a $1.5B settlement (Bartz).</li>
+<li>H1 sales and marketing jumped to $3.2B, from $120M a year earlier.</li>
+<li>Revenue per employee is over $6.6M, up from $1.4M a year ago.</li>
+<li>Total raised to date: $141.1B.</li>
+</ul></div></details>
+
+<details><summary>Customers and product</summary><div class="in"><ul>
+<li>11,900+ customers pay $100K or more a year. 1,900+ pay $1M or more. About 250 pay $10M or more.</li>
+<li>Products: Claude Platform (API), Claude Code (coding agent) and Claude Cowork (knowledge-work agent). Cowork is being merged into Claude.ai.</li>
+<li>Pricing is pay-per-use, metered in tokens. Opus 5.5 cut customer cost per task about 40% versus Opus 5.</li>
+<li>The pitch: “Virtual Collaborators” that do hours- or days-long work autonomously.</li>
+</ul></div></details>
+
+<details><summary>Control: who really runs it</summary><div class="in"><ul>
+<li><b>Public buyers get little say.</b> The Class F share carries 50.1% of the vote. The Trust picks a board majority. Class A holders get one vote per share on the rest.</li>
+<li>Anthropic is a public benefit corporation. Directors must balance shareholders, affected stakeholders and the mission.</li>
+<li>It is a “controlled company” under Nasdaq rules, though it says it will lean on that exemption only for the nominating committee.</li>
+<li>Amazon, other strategic partners and the 5% public-benefit stake hold non-voting Class N shares.</li>
+<li><b>Public benefit shares:</b> 5% of fully diluted shares went to a public benefit fund. The board may add up to 2% each time the stock rises 50% above the prior milestone. Each co-founder pledged 80% of their equity to philanthropy.</li>
+</ul></div></details>
+
+<details><summary>Top risks they flag</summary><div class="in"><ul>
+<li><b>Compute:</b> they compete with giant rivals, some of which are also their suppliers, for scarce chips and capacity. Commitments run to 2045 (amounts blank).</li>
+<li><b>Customer concentration:</b> a limited number of customers and distribution channels drive much of revenue.</li>
+<li><b>Model behavior:</b> models could act in unintended or misaligned ways, with liability and regulatory exposure.</li>
+<li><b>Safety slowing releases:</b> they may delay launches, as with Mythos and Project Glasswing, which could cost them ground.</li>
+<li><b>Limited history:</b> growth rates may not hold, and the company is young.</li>
+<li><b>Self-improvement loop:</b> models help build the next models, so flaws could compound.</li>
+</ul></div></details>
+
+<div class="blank"><b>Still blank in the filing:</b> IPO price range, share counts, proceeds, Q3 2026 revenue (the prospectus shows a figure placeholder), and total compute commitments. Expect these in later amendments.</div>
+
+<p class="src">Built from the SEC filing (anthropicpbc-sx1.htm) through the risk factors section, plus a few exhibits. Not yet covered: MD&amp;A detail, the principal and selling stockholder table, trustee and executive names, compensation and the underwriting terms. Not investment advice.</p>
+</main>
+</body>
+</html>
